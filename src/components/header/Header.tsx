@@ -1,5 +1,6 @@
 import { Link, useNavigate, useSearchParams } from 'react-router-dom';
-import SearchBar from '../search/SearchBar';         
+import SearchBar from '../search/SearchBar';     
+import logoUrl from '../../assets/tasty-logo.png';    
 import './Header.css';
 
 export default function Header() {
@@ -16,9 +17,9 @@ export default function Header() {
   return (
     <header className="header">
       <div className="header__inner">
-        <Link to="/" aria-label="Go to home">
-          <img src="/img/tasty-logo.png" alt="Tasty" className="logoImg" width={181} height={125}/>
-        </Link>
+<Link to="/" aria-label="Go to home">
+  <img src={logoUrl} alt="Tasty" className="logoImg" width={181} height={125} />
+</Link>
 
         <h1 className="heroTitle">Find a recipe, an idea, an inspiration…</h1>
 
