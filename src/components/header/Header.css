@@ -1,0 +1,54 @@
+/* ===== Header ===== */
+
+.header{
+  background:#fff;
+}
+
+.header__inner{
+  display:flex;
+  flex-direction:column;       /* лого → заголовок → поиск */
+  align-items:center;
+  gap:.75rem;
+  padding:1.25rem 0 1.5rem;
+}
+
+.logoImg{
+  width:181px;
+  height:125px;
+  object-fit:contain;
+  display:block;
+  cursor:pointer;
+}
+
+/* Слоган под логотипом */
+.heroTitle{
+  margin:.5rem 0 .25rem;
+  text-align:center;
+  font-family:Poppins, sans-serif;
+  font-weight:500;
+  font-size:clamp(28px, 4.2vw, 40px);
+  line-height:1.1;
+  letter-spacing:0;
+  color:#6aa59a;
+  background:transparent;
+  padding:0;
+}
+
+
+.header .searchBar{
+  width:100%;
+  max-width:640px;
+}
+
+/* ===== Breakpoints  ===== */
+
+@media (max-width:900px){
+  .header .searchBar{ max-width:520px; }
+}
+
+@media (max-width:540px){
+  .logoImg{ width:120px; height:auto; }
+  .header .searchBar{
+    max-width:100%;   
+  }
+}

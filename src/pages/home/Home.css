@@ -1,0 +1,15 @@
+.sectionTitle{
+  margin: 1.25rem 0 .75rem;
+  color: #6aa59a;
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  font-size: clamp(18px, 2.2vw, 22px);
+  line-height: 1.2;
+}
+
+.bigTitle{
+  font-weight: 500;
+  font-size: clamp(28px, 4.2vw, 35px);
+  line-height: 1.1;
+}
+.bigTitle{ font-size: clamp(24px, 6vw, 40px); line-height: 1.1; }

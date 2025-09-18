@@ -1,0 +1,12 @@
+.recipe{ background:#cfe6dd; border-radius:14px; overflow:hidden; }
+.heroImg{ width:100%; height:auto; display:block; max-height:360px; object-fit:cover; }
+.recipe__content{ display:grid; grid-template-columns:2fr 1fr; gap:1rem; padding:1rem; }
+.recipe__left h2{ margin:.25rem 0 1rem; }
+.steps{ list-style:disc inside; display:flex; flex-direction:column; gap:.5rem; }
+.recipe__right{ background:#eaf6f1; border-radius:12px; padding:1rem; height:fit-content; }
+.ingredients{ display:flex; flex-direction:column; gap:.35rem; }
+.ingredients em{ color:#6f7d74; font-style:normal; }
+.yt{ display:inline-block; margin-top:.75rem; background:#8cc9bd; color:#fff; text-decoration:none; padding:.5rem .75rem; border-radius:10px; }
+@media (max-width: 860px){
+.recipe__content{ grid-template-columns:1fr; }
+}

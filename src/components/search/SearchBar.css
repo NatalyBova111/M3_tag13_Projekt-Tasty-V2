@@ -1,0 +1,40 @@
+.searchBar{
+  display:flex;
+  gap:.5rem;
+  width:100%;
+  max-width:640px;
+}
+.searchBar input{
+  flex:1;
+  padding:.6rem .8rem;
+  border-radius:8px;
+  border:1px solid #cfded2;
+  background: rgba(212, 223, 199, 1);
+  color:#16322c;
+}
+.searchBar input::placeholder{ color: rgba(150, 192, 183, 1);
+; }
+
+.searchBar button{
+  padding:.6rem .9rem;
+  border-radius:8px;
+  border:0;
+  background: rgba(150, 192, 183, 1);
+  color:#fff;
+  cursor:pointer;
+}
+.searchBar button:hover{ filter:brightness(.95); }
+.searchBar button:active{ filter:brightness(.9); }
+
+/* адаптив  */
+@media (max-width:900px){
+  .searchBar{ max-width:520px; }
+}
+@media (max-width:540px){
+  .searchBar{
+    max-width:100%;
+    flex-direction:column;
+    gap:8px;
+  }
+  .searchBar button{ width:100%; }
+}
